@@ -23,7 +23,7 @@ module.exports ={
       // } catch (error) {}
       
       try {
-        const response = await axios.get(`https://api.kenliejugarap.com/ai/?text=${encodeURIComponent(prompt)}`);
+        //const response = await axios.get(`https://api.kenliejugarap.com/ai/?text=${encodeURIComponent(prompt)}`);
 
         if (response.data && response.data.response) {
           const result = response.data.response;
@@ -41,6 +41,18 @@ module.exports ={
         console.error("Error:", error.message);
         res.status(500).json({ result: "Internal Server Error" });
       }
+
+      try {
+       const response = await axios.get(`https://api.easy-api.online/v1/globalgpt?q=${encodeURIComponent(prompt)}`);
+        if (response.data) {
+          const res = response.data.content;
+          res.json({ result: res });
+          return;
+        }
+      } catch (error) {
+         console.error("Error:", error.message);
+      }
+
 
 
      

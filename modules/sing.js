@@ -49,7 +49,7 @@ module.exports ={
 
           const message = {
             title: video.title,
-            music: `https://aji.no-moto.repl.co/music/${fileName}`
+            music: `https://api-t86a.onrender.com/music/${fileName}`
           };
 
       res.json(message);
