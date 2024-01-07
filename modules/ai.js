@@ -23,27 +23,28 @@ module.exports ={
       // } catch (error) {}
       
       try {
-       const response = await axios.get(`https://chatgayfeyti.archashura.repl.co/?gpt=${encodeURIComponent(prompt)}`);
-        if (response.data) {
-          const { content } = response.data;
-          res.json({ result: content });
+        const response = await axios.get(`https://api.kenliejugarap.com/ai/?text=${encodeURIComponent(prompt)}`);
+
+        if (response.data && response.data.response) {
+          const result = response.data.response;
+          const textToRemove = "\n\nIs this answer helpful to you? Kindly click the link below\nhttps://click2donate.kenliejugarap.com\n(Clicking the link and clicking any ads or button and wait for 30 seconds (3 times) everyday is a big donation and help to us to maintain the servers, last longer, and upgrade servers in the future)";
+          const cleanedResult = result && result.endsWith(textToRemove)
+            ? result.slice(0, -textToRemove.length)
+            : result;
+
+          res.json({ result: cleanedResult });
           return;
-        }
-      } catch (error) {}
-
-      try {
-        const response = await axios.get(`https://free-api.chatbotcommunity.ltd/others/gpt?prompt=${encodeURIComponent(prompt)}`);
-
-        if (response.data && response.data.result) {
-          const message = response.data;
-          res.json(message);
-          return; 
+        } else {
+          res.status(500).json({ result: "Invalid API response format" });
         }
       } catch (error) {
-        console.error(error);
-        return;
+        console.error("Error:", error.message);
+        res.status(500).json({ result: "Internal Server Error" });
       }
-      res.status(400).json({ result: "Bad Request!" });
+
+
+     
+      res.status(500).json({ result: "Internal Server Error" });
     });
   },
 };

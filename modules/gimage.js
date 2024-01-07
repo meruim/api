@@ -1,6 +1,6 @@
 module.exports = {
   run: async function ({ axios, app, express, requestHandler }) {
-    const endpoint = 'https://adonisapi.easyapi0.repl.co/api/gimage?q=';
+    const endpoint = 'https://api.easy-api.online/api/gimage?q=';
 
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -37,7 +37,7 @@ module.exports = {
         res.json({ data: limitedImages });
       } catch (error) {
         res.status(500).json({ error: 'Internal server error' });
-        console.error(error);
+        console.error(error.message);
       }
     });
   },

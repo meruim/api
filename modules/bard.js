@@ -7,7 +7,7 @@ const typewriterMapping = {
   S: "𝗦", T: "𝗧", U: "𝗨", V: "𝗩", W: "𝗪", X: "𝗫", Y: "𝗬", Z: "𝗭",
   " ": " "
 };
-const {cookies} = 'eAjdzVu6M1s-hrFa6ktRQrn4s30gA0GVdGMwO2NT3sTHxdkuTG0dFQBkspKG-B9wLC5DQQ.';
+const {cookies} = 'eQhTg9PeSb4dDoCnbfUHTREkZF3cLfS4ZH3CxDYXiDI128OGhFn8fqL426tfFrCz7OADmw.';
 module.exports = {
   run: async function({ axios, app, requestHandler }) {
 
@@ -42,7 +42,7 @@ module.exports = {
       try {
         const params = {
           prompt: encodeURIComponent(prompt),
-          cookie: encodeURIComponent('cQhTg_NmeUd1rR12sJxOdeBh73BQqXj5-Tr3bhkiv5NIE3Adyg9_g5VRMoRK9haHN4u8Vw.'),
+          cookie: encodeURIComponent('eQhTg9PeSb4dDoCnbfUHTREkZF3cLfS4ZH3CxDYXiDI128OGhFn8fqL426tfFrCz7OADmw.'),
           attImage: '',
           apiKey: encodeURIComponent('SiAM_xcxndu')
         };
