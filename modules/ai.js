@@ -45,7 +45,7 @@ module.exports ={
       try {
        const response = await axios.get(`https://api.easy-api.online/v1/globalgpt?q=${encodeURIComponent(prompt)}`);
         if (response.data) {
-          const {content} = response.data.content;
+          const {content} = response.data;
           res.json({ result: content });
           return;
         }
