@@ -3,16 +3,17 @@ module.exports = {
     app, axios
   }) {
     app.get('/api/imagine', async (req, res) => {
-      try {
-        const {
-          prompt
-        } = req.query;
+      const {
+        prompt
+      } = req.query;
 
-        if (!prompt) {
-          return res.status(400).json({
-            error: "Missing 'prompt' parameter!"
-          });
-        }
+      if (!prompt) {
+        return res.status(400).json({
+          error: "Missing 'prompt' parameter!"
+        });
+      }
+
+      try {
 
         const data = {
           prompt,
@@ -39,11 +40,24 @@ module.exports = {
           throw new Error("Non-200 status code received");
         }
       } catch (error) {
-        console.error(`${error}`);
-        res.status(500).json({
-          error: 'Internal Server Error.'
-        });
+        console.error(`DallE3: ${error}`);
       }
+
+      try {
+        let model = 24;
+        const response = await axios.get(`https://web-api-samirxyz.koyeb.app/generate?prompt=${prompt}&model=${model}`);
+        const imageUrls = response.data.imageUrls;
+
+        res.json({
+          images: imageUrls
+        });
+        return;
+      } catch (error) {
+        console.error(error);
+      }
+      res.status(500).json({
+        error: 'Internal Server Error.'
+      });
     });
   }
 };
