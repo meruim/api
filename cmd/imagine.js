@@ -5,7 +5,7 @@ const {
 
 module.exports = {
   config: {
-    name: "bard",
+    name: "imagine",
     version: "1.0",
     author: "aji-nomoto",
     countDown: 5,
@@ -40,10 +40,9 @@ module.exports = {
 
     if (
       input &&
-      (input.trim().toLowerCase().startsWith("bard") ||
-        input.trim().toLowerCase().startsWith("google"))
+      (input.trim().toLowerCase().startsWith("imagine") ||
+        input.trim().toLowerCase().startsWith("dalle"))
     ) {
-      if (event.threadID === '7239944279397137') return;
       if (status === true) {
         return message.reply(
           `⚠ | You have been banned from using the bot\n❍Reason: ${reason}\n❏Please contact the admin in this group to request for a compliment.`
@@ -64,14 +63,10 @@ module.exports = {
         return message.reply(`${randomResponse}`);
       }
       const waitingQue = await message.reply("...");
-      
+
       try {
         const response = await axios.get(
-          `https://aji.no-moto.repl.co/api/bard?uid=${encodeURIComponent(
-            userID
-          )}&prompt=${encodeURIComponent(prompt)}&name=${encodeURIComponent(
-            name
-          )}&attImg=${images}`
+          `https://api-t86a.onrender.com/api/imagine?prompt=${prompt}`
         );
         const result = response.data;
         let content = result.result;
@@ -94,7 +89,7 @@ module.exports = {
 
         await message.reply(
           {
-            body: content, attachment: attachment
+            body: attachment: attachment
           });
       } catch (error) {
         console.error("Error:", error.message);

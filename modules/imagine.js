@@ -28,12 +28,12 @@ module.exports = {
         const response = await axios.post('https://project-dallee3.onrender.com/dalle', data, config);
 
         if (response.status === 200) {
-          const imageUrls = response.data.image_urls.filter(url => !url.endsWith('.svg'));
+          const images = response.data.image_urls.filter(url => !url.endsWith('.svg'));
 
           res.json({
             success: true,
             message: 'Images generated successfully',
-            imageUrls
+            images
           });
         } else {
           throw new Error("Non-200 status code received");
