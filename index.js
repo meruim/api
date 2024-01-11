@@ -6,12 +6,13 @@ const axios = require("axios");
 const fetch = require("node-fetch");
 const colors = require("colors");
 const requestHandler = require("./function/userRequest.js");
+const utils = require("./function/utils.js");
 const tm = require("./function/dateAndTime.js");
 const timeReset = require("./function/limitReseter.js");
 const ytdl = require('ytdl-core');
 const yts = require('yt-search');
 
-const API = ['ai', 'test', 'getUser', 'bard', 'sing', 'video', 'gimage', 'lyrics'];
+const API = ['ai', 'test', 'getUser', 'bard', 'sing', 'video', 'gimage', 'lyrics', 'addreq'];
 
 API.forEach((modulesName) => {
   const moduleStyled = `${modulesName}`.blue.bold.underline;
@@ -19,7 +20,7 @@ API.forEach((modulesName) => {
     const modulePath = `${__dirname}/modules/${modulesName}.js`;
     const apiModule = require(modulePath);
 
-    apiModule.run({ axios, app, express, fs, path, fetch, requestHandler, colors, ytdl, yts });
+    apiModule.run({ axios, app, express, fs, path, fetch, requestHandler, colors, ytdl, yts, utils });
 
     console.log(tm().yellow, moduleStyled, `running successfully!`.green);
   } catch (error) {
