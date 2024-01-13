@@ -1,42 +1,532 @@
 [
   {
+    "id": 1,
+    "emoji": "I signal a greeting, but my count goes beyond four.",
+    "answer": "🤚"
+  },
+  {
     "id": 2,
-    "emoji": "A yellow fruit that monkeys love to eat",
-    "answer": "🍌"
+    "emoji": "I wave without a hand.",
+    "answer": "🖐"
   },
   {
     "id": 3,
-    "emoji": "A red heart symbolizing love",
-    "answer": "❤️"
+    "emoji": "In meetings, I rise, not as a question but a sign.",
+    "answer": "✋"
   },
   {
     "id": 4,
-    "emoji": "A celestial body that provides light at night",
-    "answer": "🌕"
+    "emoji": "Spock's salute, logical and distinct.",
+    "answer": "🖖"
   },
   {
     "id": 5,
-    "emoji": "A hot beverage that people often drink in the morning",
-    "answer": "☕"
+    "emoji": "Small but powerful, a gesture of approval.",
+    "answer": "👌"
   },
   {
     "id": 6,
-    "emoji": "A face with tears of joy, expressing extreme happiness",
-    "answer": "😂"
+    "emoji": "I can hold a little, but I'm not a fist.",
+    "answer": "🤌"
   },
   {
     "id": 7,
-    "emoji": "test",
-    "answer": "🥰"
+    "emoji": "I measure minuscule things, thinner than a strand.",
+    "answer": "🤏"
   },
   {
     "id": 8,
-    "emoji": "test",
-    "answer": "🥰"
+    "emoji": "Peace out with two, victory in view.",
+    "answer": "✌️"
   },
   {
     "id": 9,
-    "emoji": "test",
-    "answer": "🥰"
+    "emoji": "Crossed for luck, two fingers stuck.",
+    "answer": "🤞"
+  },
+  {
+    "id": 10,
+    "emoji": "I steam and swell, wrapped in a leafy shell.",
+    "answer": "🫰"
+  },
+  {
+    "id": 11,
+    "emoji": "Love and rock unite, a symbol of might.",
+    "answer": "🤟"
+  },
+  {
+    "id": 12,
+    "emoji": "Metal's sign, horns up and divine.",
+    "answer": "🤘"
+  },
+  {
+    "id": 13,
+    "emoji": "Hang loose by the shore, a greeting I implore.",
+    "answer": "🤙"
+  },
+  {
+    "id": 14,
+    "emoji": "Bristled and tough, I sweep away the rough.",
+    "answer": "🫵"
+  },
+  {
+    "id": 15,
+    "emoji": "Orderly or wild, atop your head I'm styled.",
+    "answer": "🫱"
+  },
+  {
+    "id": 16,
+    "emoji": "Tentacled form, in the sea, I transform.",
+    "answer": "🫲"
+  },
+  {
+    "id": 17,
+    "emoji": "A twist in the tale, a curvy, braided trail.",
+    "answer": "🫸"
+  },
+  {
+    "id": 18,
+    "emoji": "Looping and tied, on fabric I abide.",
+    "answer": "🫷"
+  },
+  {
+    "id": 19,
+    "emoji": "Grains in a circle, not a square.",
+    "answer": "🫳"
+  },
+  {
+    "id": 20,
+    "emoji": "Rustling gently, I'm a soft, leafy spree.",
+    "answer": "🫴"
+  },
+  {
+    "id": 21,
+    "emoji": "Left I point, guiding your sight.",
+    "answer": "👈"
+  },
+  {
+    "id": 22,
+    "emoji": "Right I point, shaping your insight.",
+    "answer": "👉"
+  },
+  {
+    "id": 23,
+    "emoji": "Above all, I elevate.",
+    "answer": "👆"
+  },
+  {
+    "id": 24,
+    "emoji": "A gesture not kind.",
+    "answer": "🖕"
+  },
+  {
+    "id": 25,
+    "emoji": "Below all, I direct.",
+    "answer": "👇"
+  },
+  {
+    "id": 26,
+    "emoji": "Alone I stand, one finger at hand.",
+    "answer": "☝️"
+  },
+  {
+    "id": 27,
+    "emoji": "Approval in a tap.",
+    "answer": "👍"
+  },
+  {
+    "id": 28,
+    "emoji": "A thumbs-down clap.",
+    "answer": "👎"
+  },
+  {
+    "id": 29,
+    "emoji": "A fist of might, in protest or fight.",
+    "answer": "✊"
+  },
+  {
+    "id": 30,
+    "emoji": "Ready to strike, my power you'll like.",
+    "answer": "👊"
+  },
+  {
+    "id": 31,
+    "emoji": "A left-sided punch, strong and in a bunch.",
+    "answer": "🤛"
+  },
+  {
+    "id": 32,
+    "emoji": "A right hook swing, in a boxing ring.",
+    "answer": "🤜"
+  },
+  {
+    "id": 33,
+    "emoji": "Hands that applaud.",
+    "answer": "👏"
+  },
+  {
+    "id": 34,
+    "emoji": "Folded in prayer, a solemn pair.",
+    "answer": "🫶"
+  },
+  {
+    "id": 35,
+    "emoji": "Raised in triumph, a joyful lift.",
+    "answer": "🙌"
+  },
+  {
+    "id": 36,
+    "emoji": "Open I stay, in a welcoming array.",
+    "answer": "👐"
+  },
+  {
+    "id": 37,
+    "emoji": "Holding something small, not a basket, but a __.",
+    "answer": "🤲"
+  },
+  {
+    "id": 38,
+    "emoji": "In agreement or greeting, palms are meeting.",
+    "answer": "🤝"
+  },
+  {
+    "id": 39,
+    "emoji": "In devotion I'm pressed, a symbol of request.",
+    "answer": "🙏"
+  },
+  {
+    "id": 40,
+    "emoji": "Inscribe with me, a writing utensil you see.",
+    "answer": "✍️"
+  },
+  {
+    "id": 41,
+    "emoji": "Polished and neat, on fingertips I seat.",
+    "answer": "💅"
+  },
+  {
+    "id": 42,
+    "emoji": "Capturing moments, I'm more than a pose.",
+    "answer": "🤳"
+  },
+  {
+    "id": 43,
+    "emoji": "Flexed and strong, lifting things all day long.",
+    "answer": "💪"
+  },
+  {
+    "id": 44,
+    "emoji": "Enhanced strength, not biological length.",
+    "answer": "🦾"
+  },
+  {
+    "id": 45,
+    "emoji": "Below the knee, muscular and free.",
+    "answer": "🦵"
+  },
+  {
+    "id": 46,
+    "emoji": "Submerged in liquid, my touch can be frigid.",
+    "answer": "🦿"
+  },
+  {
+    "id": 47,
+    "emoji": "On the ground I land, feeling the sand.",
+    "answer": "🦶"
+  },
+  {
+    "id": 48,
+    "emoji": "Imprints I make, a journey I take.",
+    "answer": "👣"
+  },
+  {
+    "id": 49,
+    "emoji": "I hear the world, what am I furled?",
+    "answer": "👂"
+  },
+  {
+    "id": 50,
+    "emoji": "Assisting the ear, a helper sincere.",
+    "answer": "🦻"
+  },
+  {
+    "id": 51,
+    "emoji": "I detect the scent, what am I sent?",
+    "answer": "👃"
+  },
+  {
+    "id": 52,
+    "emoji": "Beating with life, in rhythm so rife.",
+    "answer": "🫀"
+  },
+  {
+    "id": 53,
+    "emoji": "The lung's counterpart, what am I impart?",
+    "answer": "🫁"
+  },
+  {
+    "id": 54,
+    "emoji": "Thinking cap on, where logic is drawn. What am I?",
+    "answer": "🧠"
+  },
+  {
+    "id": 55,
+    "emoji": "I'm a celestial dance, forming a glowing trance.",
+    "answer": "🌌"
+  },
+  {
+    "id": 56,
+    "emoji": "Guarding the teeth, I'm located beneath.",
+    "answer": "🦷"
+  },
+  {
+    "id": 57,
+    "emoji": "Providing support, a backbone resort.",
+    "answer": "🦴"
+  },
+  {
+    "id": 58,
+    "emoji": "I see your gaze, in a myriad of ways.",
+    "answer": "👀"
+  },
+  {
+    "id": 59,
+    "emoji": "Singular vision, observing with precision.",
+    "answer": "👁"
+  },
+  {
+    "id": 60,
+    "emoji": "I taste and I talk, what am I in a walk?",
+    "answer": "👅"
+  },
+  {
+    "id": 61,
+    "emoji": "A portal for speech, what am I in reach?",
+    "answer": "👄"
+  },
+  {
+    "id": 62,
+    "emoji": "Puffed and tender, not a balloon sender.",
+    "answer": "🫦"
+  },
+  {
+    "id": 63,
+    "emoji": "A symbol of love, not a hand from above.",
+    "answer": "💋"
+  },
+  {
+    "id": 64,
+    "emoji": "I flow through veins, what am I that sustains?",
+    "answer": "🩸"
+  },
+  {
+    "id": 65,
+    "emoji": "I tick away, measuring moments in the day.",
+    "answer": "⌚️"
+  },
+  {
+    "id": 66,
+    "emoji": "A handheld marvel, connecting near and far.",
+    "answer": "📱"
+  },
+  {
+    "id": 67,
+    "emoji": "Sending signals through the air, I make communication rare.",
+    "answer": "📲"
+  },
+  {
+    "id": 68,
+    "emoji": "A digital canvas, where tasks and ideas amass.",
+    "answer": "💻"
+  },
+  {
+    "id": 69,
+    "emoji": "I'm not a typewriter, but keys I do scatter.",
+    "answer": "⌨️"
+  },
+  {
+    "id": 70,
+    "emoji": "A screen for work, a monitor for display.",
+    "answer": "🖥"
+  },
+  {
+    "id": 71,
+    "emoji": "I print your words in ink, a document's link.",
+    "answer": "🖨"
+  },
+  {
+    "id": 72,
+    "emoji": "Navigate with a click, I'm more than just a stick.",
+    "answer": "🖱"
+  },
+  {
+    "id": 73,
+    "emoji": "In the world of gaming, I control the fun and aiming.",
+    "answer": "🕹"
+  },
+  {
+    "id": 74,
+    "emoji": "A tool for crafting, gripping and fastening.",
+    "answer": "🗜"
+  },
+  {
+    "id": 75,
+    "emoji": "I store information in a disc, a shiny, reflective risk.",
+    "answer": "💽"
+  },
+  {
+    "id": 76,
+    "emoji": "A digital memory, not quite a paper diary.",
+    "answer": "💾"
+  },
+  {
+    "id": 77,
+    "emoji": "I spin and play, a disc of light and display.",
+    "answer": "💿"
+  },
+  {
+    "id": 78,
+    "emoji": "Once a video keeper, now a relic sleeper.",
+    "answer": "📀"
+  },
+  {
+    "id": 79,
+    "emoji": "An old tape companion, preserving moments in union.",
+    "answer": "📼"
+  },
+  {
+    "id": 80,
+    "emoji": "Freeze moments in a flash, a memory stash.",
+    "answer": "📷"
+  },
+  {
+    "id": 81,
+    "emoji": "Freeze moments in a flash, a memory stash.",
+    "answer": "📷"
+  },
+  {
+    "id": 82,
+    "emoji": "Capturing motion, I'm a film in devotion.",
+    "answer": "🎥"
+  },
+  {
+    "id": 83,
+    "emoji": "Reel after reel, memories I conceal.",
+    "answer": "📽"
+  },
+  {
+    "id": 84,
+    "emoji": "Silent or talkie, I'm a cinema chalky.",
+    "answer": "🎞"
+  },
+  {
+    "id": 85,
+    "emoji": "A device for talking, a bell for walking.",
+    "answer": "📞"
+  },
+  {
+    "id": 86,
+    "emoji": "A classic connection, with a rotary reflection.",
+    "answer": "☎️"
+  },
+  {
+    "id": 87,
+    "emoji": "An old-school pager, a messenger wager.",
+    "answer": "📟"
+  },
+  {
+    "id": 88,
+    "emoji": "A faxing feature, transmitting information in leisure.",
+    "answer": "📠"
+  },
+  {
+    "id": 89,
+    "emoji": "From news to shows, I bring visual flows.",
+    "answer": "📺"
+  },
+  {
+    "id": 90,
+    "emoji": "Tuning in sound, radio waves abound.",
+    "answer": "📻"
+  },
+  {
+    "id": 91,
+    "emoji": "I'm plastic and sleek, your transactions I keep.",
+    "answer": "💳"
+  },
+  {
+    "id": 92,
+    "emoji": "A flattened twist, not a braid's tryst.",
+    "answer": "🫏"
+  },
+  {
+    "id": 93,
+    "emoji": "A swirl and a turn, a hairstyle to discern.",
+    "answer": "🫎"
+  },
+  {
+    "id": 94,
+    "emoji": "In the wind, I sway, a decorative display.",
+    "answer": "🪿"
+  },
+  {
+    "id": 95,
+    "emoji": "Dark and mysterious, with feathers so glorious.",
+    "answer": "🐦‍⬛"
+  },
+  {
+    "id": 96,
+    "emoji": "A tool in your hand, cleaning and unplanned.",
+    "answer": "🪽"
+  },
+  {
+    "id": 97,
+    "emoji": "A block in my grip, scrubbing without a slip.",
+    "answer": "🪼"
+  },
+  {
+    "id": 98,
+    "emoji": "A tool for the floors, sweeping away chores.",
+    "answer": "🪻"
+  },
+  {
+    "id": 99,
+    "emoji": "Twisted and tied, a coil on the side.",
+    "answer": "🫛"
+  },
+  {
+    "id": 100,
+    "emoji": "A loop and a twist, atop your head I exist.",
+    "answer": "🫚"
+  },
+  {
+    "id": 101,
+    "emoji": "A stick in my hand, directing the band.",
+    "answer": "🪭"
+  },
+  {
+    "id": 102,
+    "emoji": "A vessel of sorts, where water transports.",
+    "answer": "🪮"
+  },
+  {
+    "id": 103,
+    "emoji": "Adorned and green, a festive sheen.",
+    "answer": "🪈"
+  },
+  {
+    "id": 104,
+    "emoji": "A flag or a banner, in the breeze, I garner.",
+    "answer": "🪇"
+  },
+  {
+    "id": 105,
+    "emoji": "A stick on the floor, the dirt I explore.",
+    "answer": "🪯"
+  },
+  {
+    "id": 106,
+    "emoji": "A clamp or a grip, holding things in a tight flip.",
+    "answer": "🛜"
   }
 ]
