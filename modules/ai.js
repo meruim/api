@@ -12,16 +12,19 @@ module.exports ={
       if (handle) {
         return res.json({result: handle.error});
       }
-      // try {
-      //  const response = await axios.get(`https://gpt4.siam-apiproject.repl.co/api?uid=${uid}&query=${prompt}`);
-      //   if (response.data) {
-      //     const { lastAnswer } = response.data;
-      //     if(!lastAnswer) return;
-      //     res.json({ result: lastAnswer });
-      //     return;
-      //   }
-      // } catch (error) {}
       
+      try {
+       const response = await axios.get(`https://hercai.onrender.com/gemini/hercai?question=${encodeURIComponent(prompt)}`);
+        if (response.data) {
+          const {reply} = response.data;
+          if(!reply) return;
+          res.json({ result: reply });
+          return;
+        }
+      } catch (error) {
+         console.error("Error:", error.message);
+      }
+
       try {
         const response = await axios.get(`https://api.kenliejugarap.com/ai/?text=${encodeURIComponent(prompt)}`);
 
@@ -35,11 +38,10 @@ module.exports ={
           res.json({ result: cleanedResult });
           return;
         } else {
-          res.status(500).json({ result: "Invalid API response format" });
+          console.error(error);
         }
       } catch (error) {
         console.error("Error:", error.message);
-        res.status(500).json({ result: "Internal Server Error" });
       }
 
       try {
