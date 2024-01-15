@@ -73,9 +73,6 @@ module.exports = {
         console.error("Error:", error.message);
       }
 
-
-
-
       res.status(500).json({
         result: "Internal Server Error"
       });

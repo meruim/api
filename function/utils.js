@@ -1,5 +1,5 @@
 const fs = require("fs");
-const path = require("path");
+const {path} = require("path");
 const tm = require('./dateAndTime.js');
 const jsonFilePath = path.join(__dirname, "../data/usersInfo.json");
 

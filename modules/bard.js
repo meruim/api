@@ -70,19 +70,6 @@ module.exports = {
         console.error(`siambardproject: ${error}`);
       }
 
-      try {
-
-        const response = await axios.get(`https://gptgotest.lazygreyzz.repl.co/ask?cookies=${cookies}&question=${prompt}`);
-
-        if (response.data) {
-          const responseData = JSON.parse(response.data.response);
-          const messageText = responseData.response.trim();
-          res.json({ result: messageText });
-          return;
-        }
-      } catch (error) {
-        console.error(`${error}`);
-      }
     });
   }
 };
