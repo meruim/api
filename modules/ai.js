@@ -22,23 +22,6 @@ module.exports = {
       }
 
       try {
-        const response = await axios.get(`https://hercai.onrender.com/gemini/hercai?question=${encodeURIComponent(prompt)}`);
-        if (response.data) {
-          const {
-            reply
-          } = response.data;
-          if (!reply) return;
-          if (reply == "Question Error!") return;
-          res.json({
-            result: reply
-          });
-          return;
-        }
-      } catch (error) {
-        console.error("Error:", error.message);
-      }
-
-      try {
         const response = await axios.get(`https://api.kenliejugarap.com/ai/?text=${encodeURIComponent(prompt)}`);
 
         if (response.data && response.data.response) {
