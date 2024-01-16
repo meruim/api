@@ -11,8 +11,8 @@ const tm = require("./function/dateAndTime.js");
 const timeReset = require("./function/limitReseter.js");
 const ytdl = require('ytdl-core');
 const yts = require('yt-search');
-
-const API = ['ai', 'test', 'getUser', 'bard', 'sing', 'video', 'gimage', 'lyrics', 'addreq', 'imagine', 'emojiGame'];
+const leaderboards = require("./function/leaderboardsHandler.js");
+const API = ['ai', 'test', 'getUser', 'bard', 'sing', 'video', 'gimage', 'lyrics', 'addreq', 'imagine', 'emojiGame', 'leaderboards'];
 
 API.forEach((modulesName) => {
   const moduleStyled = `${modulesName}`.blue.bold.underline;
@@ -21,7 +21,7 @@ API.forEach((modulesName) => {
     const apiModule = require(modulePath);
 
     apiModule.run({
-      axios, app, express, fs, path, fetch, requestHandler, colors, ytdl, yts, utils
+      axios, app, express, fs, path, fetch, requestHandler, colors, ytdl, yts, utils, leaderboards
     });
 
     console.log(tm().yellow, moduleStyled, `running successfully!`.green);
