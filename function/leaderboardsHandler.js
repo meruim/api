@@ -89,6 +89,7 @@ async function dec( {
 const inc = ({
   id, name, trophy
 }) => {
+  let success = false;
   try {
     if (!id) {
       return {
@@ -130,7 +131,7 @@ const inc = ({
         boardData[index].name = name;
       }
     }
-
+   success = true;
     fs.writeJsonSync(leaderBoardsData, boardData);
 
     return {success};
