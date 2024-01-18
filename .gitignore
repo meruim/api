@@ -1,2 +1,4 @@
 node_modules/
-
+data/*
+!data/leaderBoardsData.json
+!data/emojiCharades.json
