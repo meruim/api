@@ -1,8 +1,4 @@
 node_modules/
-<<<<<<< HEAD
-
-=======
 data/*
 !data/leaderBoardsData.json
 !data/emojiCharades.json
->>>>>>> 2aec850 (emojiCharades.js added)
