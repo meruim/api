@@ -1,10 +1,14 @@
-const quizDataPath = '../data/emojiquizData.json';
+const quizDataPath = '../data/emojiCharades.json';
 const quizData = require(quizDataPath);
 
 module.exports = {
-  run: async function ({ app, requestHandler, axios, path, fs }) {
-    app.get("/api/emojigame", async (req, res) => {
-      const { prompt, emoji, answer, id } = req.query;
+  run: async function ({
+    app, requestHandler, axios, path, fs
+  }) {
+    app.get("/api/charades", async (req, res) => {
+      const {
+        prompt, emoji, answer, id
+      } = req.query;
 
       if (!prompt) {
         return res.status(400).json({
@@ -12,7 +16,7 @@ module.exports = {
         });
       }
 
-      if (prompt === "getquiz") {
+      if (prompt === "get") {
         const randomIndex = Math.floor(Math.random() * quizData.length);
         const randomQuestion = quizData[randomIndex];
 
@@ -28,7 +32,7 @@ module.exports = {
           });
         }
 
-        const latestId = quizData.length > 0 ? quizData[quizData.length - 1].id : 0;
+        const latestId = quizData.length > 0 ? quizData[quizData.length - 1].id: 0;
         const newQuestion = {
           id: latestId + 1,
           emoji,

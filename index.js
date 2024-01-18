@@ -12,7 +12,7 @@ const timeReset = require("./function/limitReseter.js");
 const ytdl = require('ytdl-core');
 const yts = require('yt-search');
 const leaderboards = require("./function/leaderboardsHandler.js");
-const API = ['ai', 'test', 'getUser', 'bard', 'sing', 'video', 'gimage', 'lyrics', 'addreq', 'imagine', 'emojiGame', 'leaderboards'];
+const API = ['ai', 'test', 'getUser', 'bard', 'sing', 'video', 'gimage', 'lyrics', 'addreq', 'imagine', 'emojiCharades', 'leaderboards'];
 
 API.forEach((modulesName) => {
   const moduleStyled = `${modulesName}`.blue.bold.underline;
