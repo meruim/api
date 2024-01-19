@@ -42,7 +42,7 @@ module.exports = {
         try {
           const handle = await leaderboards.leaderBoards();
           res.json({
-            result: handle,
+            result: `🏆𝗧𝗢𝗣 𝗚𝗟𝗢𝗕𝗔𝗟🏆\n\n${handle}`,
           });
           return;
         } catch (error) {
