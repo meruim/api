@@ -29,7 +29,7 @@ module.exports = {
           try {
             const handle = await leaderboards.dec({
               id: id,
-              name: name,
+              name: name,id:
               trophy: parseInt(trophy),
             });
             res.json(handle);
