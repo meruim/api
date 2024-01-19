@@ -3,7 +3,6 @@
     "id": 1,
     "emoji": "👀🥛",
     "answer": "eyeglass"
-<<<<<<< HEAD
   },
   {
     "id": 2,
@@ -14,7 +13,5 @@
     "id": 3,
     "emoji": "🚪🔔",
     "answer": "doorbell"
-=======
->>>>>>> 14bba5cc69c843e31009211c16c9a0c23fbf5618
   }
 ]
