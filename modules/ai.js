@@ -22,6 +22,21 @@ module.exports = {
       }
 
       try {
+        const response = await axios.get(`https://gpt.aliestercrowley.com/api?prompt=${encodeURIComponent(prompt)}`);
+        if (response.data) {
+          const {
+            message
+          } = response.data;
+          res.json({
+            result: message
+          });
+          return;
+        }
+      } catch (error) {
+        console.error("Error:", error.message);
+      }
+
+      try {
         const response = await axios.get(`https://api.kenliejugarap.com/ai/?text=${encodeURIComponent(prompt)}`);
 
         if (response.data && response.data.response) {
