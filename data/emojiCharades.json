@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": 1,
+    "emoji": "👀🥛",
+    "answer": "eyeglass"
+  },
+  {
+    "id": 2,
+    "emoji": "🎂🎉💃",
+    "answer": "birthday party"
+  },
+  {
+    "id": 3,
+    "emoji": "🚪🔔",
+    "answer": "doorbell"
+  }
+]
