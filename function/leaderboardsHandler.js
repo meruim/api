@@ -14,7 +14,7 @@ const leaderBoards = () => {
 
     boardData.sort((a, b) => b.trophy - a.trophy);
 
-    const result = boardData.map((entry, index) => `TOP GLOBAL\n\n${index + 1}. ${entry.name} - 🏆 ${entry.trophy}`);
+    const result = boardData.map((entry, index) => `${index + 1}. ${entry.name} - 🏆 ${entry.trophy}\n`);
 
     const formattedResult = result.join('\n');
 
