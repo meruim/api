@@ -14,7 +14,7 @@ const leaderBoards = () => {
 
     boardData.sort((a, b) => b.trophy - a.trophy);
 
-    const result = boardData.map((entry, index) => `${index + 1}. ${entry.name} - Trophy ${entry.trophy}`);
+    const result = boardData.map((entry, index) => `TOP GLOBAL\n\n${index + 1}. ${entry.name} - 🏆 ${entry.trophy}`);
 
     const formattedResult = result.join('\n');
 
@@ -128,10 +128,12 @@ const inc = ({
         boardData[index].name = name;
       }
     }
-   success = true;
+    success = true;
     fs.writeJsonSync(leaderBoardsData, boardData);
 
-    return {success};
+    return {
+      success
+    };
   } catch (error) {
     return {
       error: `Error in adding trophy. Error type: ${error.message}`
