@@ -61,9 +61,6 @@ async function dec( {
           boardData[index].trophy -= trophy;
           success = true;
         } else {
-          return {
-            error: "Invalid cannot decrease trophy below zero!"
-          };
           console.log(`Cannot decrement trophy below zero for ID ${id}`);
         }
       } else {
